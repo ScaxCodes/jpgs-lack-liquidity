@@ -397,8 +397,31 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `body {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
     font-size: 2rem;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,eAAe;AACnB","sourcesContent":["body {\n    font-size: 2rem;\n}"],"sourceRoot":""}]);
+}
+
+.if-you {
+    width: 230px;
+    margin: 120px 0 0 0;
+}
+
+.equation-container {
+    display: flex;
+    gap: 10px;
+}
+
+.facts-container p {
+    font-size: 1.15rem;
+    margin: 5px 0;
+}
+
+.solana-project img {
+    width: 200px;
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;IACtB,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,kBAAkB;IAClB,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","sourcesContent":["body {\n    display: flex;\n    gap: 20px;\n    flex-direction: column;\n    align-items: center;\n    font-size: 2rem;\n}\n\n.if-you {\n    width: 230px;\n    margin: 120px 0 0 0;\n}\n\n.equation-container {\n    display: flex;\n    gap: 10px;\n}\n\n.facts-container p {\n    font-size: 1.15rem;\n    margin: 5px 0;\n}\n\n.solana-project img {\n    width: 200px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
