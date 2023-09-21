@@ -1,3 +1,7 @@
+/* INSERT VARIABLE
+USDC COLOR = #2775ca
+SOL COLOR = #9945FF */
+
 body {
     display: flex;
     gap: 20px;
@@ -11,9 +15,46 @@ body {
     margin: 120px 0 0 0;
 }
 
+#usdc {
+    text-decoration: underline;
+    text-decoration-color: #2775ca;
+    text-underline-position: under;
+}
+
+#project-name {
+    text-decoration: underline;
+    text-decoration-color: #9945FF;
+    text-underline-position: under;
+}
+
+.you-would-have {
+    width: 230px;
+}
+
+#dollar {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-underline-position: under;
+}
+
 .equation-container {
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    align-items: center;
+}
+
+.equal-sign {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.price-in-sol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9945FF;
 }
 
 .facts-container p {
@@ -22,5 +63,19 @@ body {
 }
 
 .solana-project img {
-    width: 200px;
+    width: 150px;
+}
+
+button {
+    height: 8vh;
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.donation-link {
+    font-size: 1.15rem;
 }

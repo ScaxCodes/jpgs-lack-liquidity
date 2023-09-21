@@ -396,7 +396,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
+___CSS_LOADER_EXPORT___.push([module.id, `/* INSERT VARIABLE
+USDC COLOR = #2775ca
+SOL COLOR = #9945FF */
+
+body {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -409,9 +413,46 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
     margin: 120px 0 0 0;
 }
 
+#usdc {
+    text-decoration: underline;
+    text-decoration-color: #2775ca;
+    text-underline-position: under;
+}
+
+#project-name {
+    text-decoration: underline;
+    text-decoration-color: #9945FF;
+    text-underline-position: under;
+}
+
+.you-would-have {
+    width: 230px;
+}
+
+#dollar {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-underline-position: under;
+}
+
 .equation-container {
     display: flex;
-    gap: 10px;
+    gap: 40px;
+    align-items: center;
+}
+
+.equal-sign {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.price-in-sol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #9945FF;
 }
 
 .facts-container p {
@@ -420,8 +461,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 }
 
 .solana-project img {
-    width: 200px;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;IACtB,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,aAAa;IACb,SAAS;AACb;;AAEA;IACI,kBAAkB;IAClB,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB","sourcesContent":["body {\n    display: flex;\n    gap: 20px;\n    flex-direction: column;\n    align-items: center;\n    font-size: 2rem;\n}\n\n.if-you {\n    width: 230px;\n    margin: 120px 0 0 0;\n}\n\n.equation-container {\n    display: flex;\n    gap: 10px;\n}\n\n.facts-container p {\n    font-size: 1.15rem;\n    margin: 5px 0;\n}\n\n.solana-project img {\n    width: 200px;\n}"],"sourceRoot":""}]);
+    width: 150px;
+}
+
+button {
+    height: 8vh;
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.donation-link {
+    font-size: 1.15rem;
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;IACI,aAAa;IACb,SAAS;IACT,sBAAsB;IACtB,mBAAmB;IACnB,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,mBAAmB;AACvB;;AAEA;IACI,0BAA0B;IAC1B,8BAA8B;IAC9B,8BAA8B;AAClC;;AAEA;IACI,0BAA0B;IAC1B,8BAA8B;IAC9B,8BAA8B;AAClC;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,0BAA0B;IAC1B,4BAA4B;IAC5B,8BAA8B;AAClC;;AAEA;IACI,aAAa;IACb,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,iBAAiB;AACrB;;AAEA;IACI,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,iBAAiB;IACjB,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,kBAAkB;IAClB,aAAa;AACjB;;AAEA;IACI,YAAY;AAChB;;AAEA;IACI,WAAW;IACX,sBAAsB;IACtB,YAAY;IACZ,SAAS;IACT,kBAAkB;IAClB,gBAAgB;IAChB,eAAe;AACnB;;AAEA;IACI,kBAAkB;AACtB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n    display: flex;\n    gap: 20px;\n    flex-direction: column;\n    align-items: center;\n    font-size: 2rem;\n}\n\n.if-you {\n    width: 230px;\n    margin: 120px 0 0 0;\n}\n\n#usdc {\n    text-decoration: underline;\n    text-decoration-color: #2775ca;\n    text-underline-position: under;\n}\n\n#project-name {\n    text-decoration: underline;\n    text-decoration-color: #9945FF;\n    text-underline-position: under;\n}\n\n.you-would-have {\n    width: 230px;\n}\n\n#dollar {\n    text-decoration: underline;\n    text-decoration-color: green;\n    text-underline-position: under;\n}\n\n.equation-container {\n    display: flex;\n    gap: 40px;\n    align-items: center;\n}\n\n.equal-sign {\n    font-size: 3rem;\n    font-weight: bold;\n}\n\n.price-in-sol {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    font-size: 1.5rem;\n    font-weight: bold;\n    color: #9945FF;\n}\n\n.facts-container p {\n    font-size: 1.15rem;\n    margin: 5px 0;\n}\n\n.solana-project img {\n    width: 150px;\n}\n\nbutton {\n    height: 8vh;\n    background-color: blue;\n    color: white;\n    border: 0;\n    font-size: 1.15rem;\n    font-weight: 700;\n    cursor: pointer;\n}\n\n.donation-link {\n    font-size: 1.15rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
