@@ -3,6 +3,7 @@ import "./style.css";
 
 console.log("Hello World!");
 
+// TEST FOR PUSH
 // Not working, wait for API / Node.js lesson in TheOdinProject
 // Try with Hyperspace.xyz JS client as soon as we have a requested API key
 
