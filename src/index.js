@@ -14,9 +14,9 @@ console.log("Hello World!");
 //   .then(response => console.log(response))
 //   .catch(err => console.error(err));
 
-//   const options = {method: 'GET', headers: {accept: 'application/json'}};
+const options = {method: 'GET', headers: {accept: 'application/json'}};
 
-//   fetch('https://api-mainnet.magiceden.dev/v2/collections/reavers/stats', options)
-//     .then(response => response.json())
-//     .then(response => console.log(response))
-//     .catch(err => console.error(err));
+fetch('https://api-mainnet.magiceden.dev/v2/collections/reavers/stats', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
