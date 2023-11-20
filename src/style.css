@@ -3,80 +3,90 @@ USDC COLOR = #2775ca
 SOL COLOR = #9945FF */
 
 body {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2rem;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .if-you {
-    width: 230px;
-    margin: 120px 0 0 0;
+  width: 230px;
+  margin: 120px 0 0 0;
 }
 
 #usdc {
-    text-decoration: underline;
-    text-decoration-color: #2775ca;
-    text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-color: #2775ca;
+  text-underline-position: under;
 }
 
 #project-name {
-    text-decoration: underline;
-    text-decoration-color: #9945FF;
-    text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-color: #9945ff;
+  text-underline-position: under;
 }
 
 .you-would-have {
-    width: 230px;
+  width: 230px;
 }
 
 #dollar {
-    text-decoration: underline;
-    text-decoration-color: green;
-    text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-color: green;
+  text-underline-position: under;
 }
 
 .equation-container {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.equal-sign,
+.slash-sign {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .equal-sign {
-    font-size: 3rem;
-    font-weight: bold;
+  margin: 0 30px;
 }
 
-.price-in-sol {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #9945FF;
+.price-in-sol,
+.price-in-usdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #9945ff;
+}
+
+.price-in-usdc {
+  color: green;
 }
 
 .facts-container p {
-    font-size: 1.15rem;
-    margin: 5px 0;
+  font-size: 1.15rem;
+  margin: 5px 0;
 }
 
 .solana-project img {
-    width: 150px;
+  width: 150px;
 }
 
 button {
-    height: 8vh;
-    background-color: blue;
-    color: white;
-    border: 0;
-    font-size: 1.15rem;
-    font-weight: 700;
-    border-radius: 5px;
-    cursor: pointer;
+  height: 8vh;
+  background-color: blue;
+  color: white;
+  border: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .donation-link {
-    font-size: 1.15rem;
+  font-size: 1.15rem;
 }

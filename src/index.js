@@ -1,22 +1,41 @@
 import "./normalize.css";
 import "./style.css";
 
-console.log("Hello World!");
+const projects = {
+  dumbassDonkeys: {
+    api: "dumbass_donkeys",
+    name: "Dumbass Donkey",
+    floorPrice: 0.061,
+    mintPriceSOL: 0.1,
+    mintPriceUSDC: 33.62 * 0.1,
+    mintDate: "2022-09-09",
+    picture: "./dumbass_donkeys.webp",
+    urlME: "//magiceden.io/marketplace/dumbass_donkeys",
+  },
+};
 
-// TEST FOR PUSH
-// Not working, wait for API / Node.js lesson in TheOdinProject
-// Try with Hyperspace.xyz JS client as soon as we have a requested API key
+const SOLrate = 61.03;
 
-// const options = {method: 'GET', headers: {accept: 'application/json'}, mode: 'no-cors'};
+const projectName = document.querySelector("#project-name");
+projectName.textContent = projects.dumbassDonkeys.name;
 
-// fetch('https://api-mainnet.magiceden.dev/v2/collections/reavers/stats', options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
+const mintPriceUSDC = document.querySelector("#dollar");
+mintPriceUSDC.textContent = `$${projects.dumbassDonkeys.mintPriceUSDC.toFixed(
+  2
+)}`;
 
-const options = {method: 'GET', headers: {accept: 'application/json'}};
+const floorPrice = document.querySelector(".price-in-sol div");
+floorPrice.textContent = projects.dumbassDonkeys.floorPrice;
 
-fetch('https://api-mainnet.magiceden.dev/v2/collections/reavers/stats', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
+const USDCPrice = document.querySelector(".price-in-usdc div");
+USDCPrice.textContent = (projects.dumbassDonkeys.floorPrice * SOLrate).toFixed(
+  2
+);
+
+const mintPriceSOL = document.querySelector("#mint-price-sol");
+mintPriceSOL.textContent = `${projects.dumbassDonkeys.mintPriceSOL} $SOL`;
+
+const mintDate = document.querySelector("#mint-date");
+mintDate.textContent = projects.dumbassDonkeys.mintDate;
+
+console.log(projects);
