@@ -1179,6 +1179,7 @@ let SOLrate = 0;
 
 async function fetchSOLRate() {
   try {
+    if (SOLrate !== 0) return;
     // https://docs.coincap.io/
     const response = await fetch(`https://api.coincap.io/v2/assets/solana`);
     const responseJson = await response.json();
