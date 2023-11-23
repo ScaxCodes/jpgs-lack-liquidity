@@ -50,12 +50,14 @@ function displayDOM(project) {
   image.src = projects[project].picture;
 }
 
-// //
-// function randomProject(project) {
-//   displayDOM(project);
-// }
+const projectsList = Object.keys(projects);
 
-// //
+function displayRandomProject() {
+  let randomIndex = Math.floor(Math.random() * projectsList.length);
+  console.log(`Random project-index is: ${randomIndex}`);
+  calcUSDC(projectsList[randomIndex]);
+  displayDOM(projectsList[randomIndex]);
+}
 
 const button = document.querySelector("button");
 
@@ -74,14 +76,15 @@ function showDonationButton() {
   });
 }
 
-function randomButtonText() {
+function displayRandomButtonText() {
   let randomIndex = Math.floor(Math.random() * buttonTexts.length);
   console.log(`Random button-text-index is: ${randomIndex}`);
   button.innerText = buttonTexts[randomIndex];
 }
 
 function eventListenerButtontext() {
-  button.addEventListener("click", randomButtonText);
+  button.addEventListener("click", displayRandomButtonText);
+  button.addEventListener("click", displayRandomProject);
 }
 
 calcUSDC("lily");
