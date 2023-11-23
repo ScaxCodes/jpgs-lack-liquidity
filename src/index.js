@@ -14,6 +14,24 @@ const projects = {
   },
 };
 
+const buttonTexts = [
+  "Bring on the chaos! 🌪️",
+  "More shocks, please ⚡️",
+  "Feed me pain 😩",
+  "Give me disruption! 🌀",
+  "Chaos incoming! 🤯",
+  "Let's feel the rollercoaster 🎢",
+  "Inject more drama! 🎭",
+  "I crave the chaos 🌌",
+  "Unleash the madness! 😵",
+  "Bring the thrill! 🎯",
+  "Surprise me! 🎉",
+  "Crypto is a scam? 🤔",
+  "NFTs = Illiquidity? 📉",
+  "Bruh 😵",
+  "Oof... 🤦‍♂️",
+];
+
 let SOLrate = 0;
 
 async function fetchSOLRate() {
@@ -60,20 +78,34 @@ function displayDOM() {
   mintDate.textContent = projects.dumbassDonkeys.mintDate;
 }
 
+const button = document.querySelector("button");
+
 function showDonationButton() {
-  const button = document.querySelector("button");
   let counter = 0;
   button.addEventListener("click", () => {
     if (counter === 4) {
+      console.log("Rendering donation link, stopping button counter...");
       const donationDiv = document.querySelector(".donation-link");
       donationDiv.style.display = "block";
+      return;
     }
     if (counter > 4) return;
     counter++;
-    console.log(counter);
+    console.log(`Button clicked ${counter} time(s)`);
   });
+}
+
+function randomButtonText() {
+  let randomIndex = Math.floor(Math.random() * buttonTexts.length);
+  console.log(`Random button-text-index is: ${randomIndex}`);
+  button.innerText = buttonTexts[randomIndex];
+}
+
+function eventListenerButtontext() {
+  button.addEventListener("click", randomButtonText);
 }
 
 calcUSDC();
 displayDOM();
 showDonationButton();
+eventListenerButtontext();

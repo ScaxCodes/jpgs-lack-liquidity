@@ -78,6 +78,7 @@ body {
 
 button {
   height: 8vh;
+  width: 260px;
   background-color: blue;
   color: white;
   border: 0;
@@ -90,4 +91,5 @@ button {
 .donation-link {
   display: none;
   font-size: 1.15rem;
+  text-align: center;
 }
