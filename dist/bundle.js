@@ -1087,31 +1087,56 @@ const projects = {
   },
 };
 
-const SOLrate = 61.03;
+// TODO: Add API that fetches SOL rate
+// TOFIX: RETURN NUMBER/STRING, NOT A PENDING PROMISE
+let SOLrate = 0;
 
-const projectName = document.querySelector("#project-name");
-projectName.textContent = projects.dumbassDonkeys.name;
+async function fetchSOLRate() {
+  try {
+    const response = await fetch(`https://api.coincap.io/v2/assets/solana`);
+    const responseJson = await response.json();
+    SOLrate = responseJson.data.priceUsd;
+    console.log(`Current $SOL rate: ${responseJson.data.priceUsd}$`);
+    return responseJson.data.priceUsd;
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
+}
 
-const mintPriceUSDC = document.querySelector("#dollar");
-mintPriceUSDC.textContent = `$${projects.dumbassDonkeys.mintPriceUSDC.toFixed(
-  2
-)}`;
+async function calcUSDC() {
+  try {
+    await fetchSOLRate();
 
-const floorPrice = document.querySelector(".price-in-sol div");
-floorPrice.textContent = projects.dumbassDonkeys.floorPrice;
+    const USDCPrice = document.querySelector(".price-in-usdc div");
+    USDCPrice.textContent = (
+      projects.dumbassDonkeys.floorPrice * SOLrate
+    ).toFixed(2);
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
+}
 
-const USDCPrice = document.querySelector(".price-in-usdc div");
-USDCPrice.textContent = (projects.dumbassDonkeys.floorPrice * SOLrate).toFixed(
-  2
-);
+function displayDOM() {
+  const projectName = document.querySelector("#project-name");
+  projectName.textContent = projects.dumbassDonkeys.name;
 
-const mintPriceSOL = document.querySelector("#mint-price-sol");
-mintPriceSOL.textContent = `${projects.dumbassDonkeys.mintPriceSOL} $SOL`;
+  const mintPriceUSDC = document.querySelector("#dollar");
+  mintPriceUSDC.textContent = `$${projects.dumbassDonkeys.mintPriceUSDC.toFixed(
+    2
+  )}`;
 
-const mintDate = document.querySelector("#mint-date");
-mintDate.textContent = projects.dumbassDonkeys.mintDate;
+  const floorPrice = document.querySelector(".price-in-sol div");
+  floorPrice.textContent = projects.dumbassDonkeys.floorPrice;
 
-console.log(projects);
+  const mintPriceSOL = document.querySelector("#mint-price-sol");
+  mintPriceSOL.textContent = `${projects.dumbassDonkeys.mintPriceSOL} $SOL`;
+
+  const mintDate = document.querySelector("#mint-date");
+  mintDate.textContent = projects.dumbassDonkeys.mintDate;
+}
+
+calcUSDC();
+displayDOM();
 
 })();
 
