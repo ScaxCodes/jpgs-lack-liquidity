@@ -1221,12 +1221,14 @@ function displayDOM(project) {
   image.src = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].picture;
 }
 
-// //
-// function randomProject(project) {
-//   displayDOM(project);
-// }
+const projectsList = Object.keys(_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects);
 
-// //
+function displayRandomProject() {
+  let randomIndex = Math.floor(Math.random() * projectsList.length);
+  console.log(`Random project-index is: ${randomIndex}`);
+  calcUSDC(projectsList[randomIndex]);
+  displayDOM(projectsList[randomIndex]);
+}
 
 const button = document.querySelector("button");
 
@@ -1245,14 +1247,15 @@ function showDonationButton() {
   });
 }
 
-function randomButtonText() {
+function displayRandomButtonText() {
   let randomIndex = Math.floor(Math.random() * _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts.length);
   console.log(`Random button-text-index is: ${randomIndex}`);
   button.innerText = _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts[randomIndex];
 }
 
 function eventListenerButtontext() {
-  button.addEventListener("click", randomButtonText);
+  button.addEventListener("click", displayRandomButtonText);
+  button.addEventListener("click", displayRandomProject);
 }
 
 calcUSDC("lily");
