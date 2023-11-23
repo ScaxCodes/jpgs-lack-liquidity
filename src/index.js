@@ -14,8 +14,6 @@ const projects = {
   },
 };
 
-// TODO: Add API that fetches SOL rate
-// TOFIX: RETURN NUMBER/STRING, NOT A PENDING PROMISE
 let SOLrate = 0;
 
 async function fetchSOLRate() {
@@ -62,5 +60,20 @@ function displayDOM() {
   mintDate.textContent = projects.dumbassDonkeys.mintDate;
 }
 
+function showDonationButton() {
+  const button = document.querySelector("button");
+  let counter = 0;
+  button.addEventListener("click", () => {
+    if (counter === 4) {
+      const donationDiv = document.querySelector(".donation-link");
+      donationDiv.style.display = "block";
+    }
+    if (counter > 4) return;
+    counter++;
+    console.log(counter);
+  });
+}
+
 calcUSDC();
 displayDOM();
+showDonationButton();

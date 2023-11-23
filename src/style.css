@@ -88,5 +88,6 @@ button {
 }
 
 .donation-link {
+  display: none;
   font-size: 1.15rem;
 }
