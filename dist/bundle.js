@@ -409,7 +409,7 @@ body {
 }
 
 .if-you {
-  width: 230px;
+  width: 240px;
   margin: 120px 0 0 0;
 }
 
@@ -426,7 +426,7 @@ body {
 }
 
 .you-would-have {
-  width: 230px;
+  width: 240px;
 }
 
 #dollar {
@@ -491,7 +491,7 @@ button {
   font-size: 1.15rem;
   text-align: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\n.if-you {\n  width: 230px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 230px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\n.if-you {\n  width: 240px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 240px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -990,6 +990,99 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/buttontexts.js":
+/*!****************************!*\
+  !*** ./src/buttontexts.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   buttonTexts: () => (/* binding */ buttonTexts)
+/* harmony export */ });
+const buttonTexts = [
+  "Bring on the chaos! 🌪️",
+  "More shocks, please ⚡️",
+  "Feed me pain 😩",
+  "Give me disruption! 🌀",
+  "Chaos incoming! 🤯",
+  "Let's feel the rollercoaster 🎢",
+  "Inject more drama! 🎭",
+  "I crave the chaos 🌌",
+  "Unleash the madness! 😵",
+  "Bring the thrill! 🎯",
+  "Surprise me! 🎉",
+  "Crypto is a scam? 🤔",
+  "NFTs = Illiquidity? 📉",
+  "Bruh 😵",
+  "Oof... 🤦‍♂️",
+];
+
+
+
+
+/***/ }),
+
+/***/ "./src/nftprojects.js":
+/*!****************************!*\
+  !*** ./src/nftprojects.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   projects: () => (/* binding */ projects)
+/* harmony export */ });
+const projects = {
+  dumbassDonkeys: {
+    api: "dumbass_donkeys",
+    name: "Dumbass Donkey",
+    floorPrice: 0.061,
+    mintPriceSOL: 0.1,
+    mintPriceUSDC: 33.62 * 0.1,
+    mintDate: "2022-09-09",
+    picture: "./dumbass_donkeys.webp",
+    urlME: "//magiceden.io/marketplace/dumbass_donkeys",
+  },
+  lily: {
+    api: "lily",
+    name: "LILY",
+    floorPrice: 0.686,
+    mintPriceSOL: 3,
+    mintPriceUSDC: 13.64 * 3,
+    mintDate: "2022-11-18",
+    picture: "./lily.png",
+    urlME: "//magiceden.io/marketplace/lily",
+  },
+  taiyoPilots: {
+    api: "taiyopilots",
+    name: "Taiyo Pilot",
+    floorPrice: 2.517,
+    mintPriceSOL: 35,
+    mintPriceUSDC: 9.76 * 35,
+    mintDate: "2022-12-29",
+    picture: "taiyopilots.webp",
+    urlME: "//magiceden.io/marketplace/taiyopilots",
+  },
+};
+
+
+
+// TEMPLATE
+// lily: {
+//   api: "",
+//   name: "",
+//   floorPrice: 0,
+//   mintPriceSOL: 0,
+//   mintPriceUSDC: 0,
+//   mintDate: "",
+//   picture: "",
+//   urlME: "",
+// },
+
+
 /***/ })
 
 /******/ 	});
@@ -1074,44 +1167,19 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _nftprojects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nftprojects */ "./src/nftprojects.js");
+/* harmony import */ var _buttontexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttontexts */ "./src/buttontexts.js");
 
 
 
-const projects = {
-  dumbassDonkeys: {
-    api: "dumbass_donkeys",
-    name: "Dumbass Donkey",
-    floorPrice: 0.061,
-    mintPriceSOL: 0.1,
-    mintPriceUSDC: 33.62 * 0.1,
-    mintDate: "2022-09-09",
-    picture: "./dumbass_donkeys.webp",
-    urlME: "//magiceden.io/marketplace/dumbass_donkeys",
-  },
-};
 
-const buttonTexts = [
-  "Bring on the chaos! 🌪️",
-  "More shocks, please ⚡️",
-  "Feed me pain 😩",
-  "Give me disruption! 🌀",
-  "Chaos incoming! 🤯",
-  "Let's feel the rollercoaster 🎢",
-  "Inject more drama! 🎭",
-  "I crave the chaos 🌌",
-  "Unleash the madness! 😵",
-  "Bring the thrill! 🎯",
-  "Surprise me! 🎉",
-  "Crypto is a scam? 🤔",
-  "NFTs = Illiquidity? 📉",
-  "Bruh 😵",
-  "Oof... 🤦‍♂️",
-];
+
 
 let SOLrate = 0;
 
 async function fetchSOLRate() {
   try {
+    // https://docs.coincap.io/
     const response = await fetch(`https://api.coincap.io/v2/assets/solana`);
     const responseJson = await response.json();
     SOLrate = responseJson.data.priceUsd;
@@ -1122,37 +1190,43 @@ async function fetchSOLRate() {
   }
 }
 
-async function calcUSDC() {
+async function calcUSDC(project) {
   try {
     await fetchSOLRate();
 
     const USDCPrice = document.querySelector(".price-in-usdc div");
-    USDCPrice.textContent = (
-      projects.dumbassDonkeys.floorPrice * SOLrate
-    ).toFixed(2);
+    USDCPrice.textContent = (_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice * SOLrate).toFixed(2);
   } catch (error) {
     console.error(`Error: ${error.message}`);
   }
 }
 
-function displayDOM() {
+function displayDOM(project) {
   const projectName = document.querySelector("#project-name");
-  projectName.textContent = projects.dumbassDonkeys.name;
+  projectName.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].name;
 
   const mintPriceUSDC = document.querySelector("#dollar");
-  mintPriceUSDC.textContent = `$${projects.dumbassDonkeys.mintPriceUSDC.toFixed(
-    2
-  )}`;
+  mintPriceUSDC.textContent = `$${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceUSDC.toFixed(2)}`;
 
   const floorPrice = document.querySelector(".price-in-sol div");
-  floorPrice.textContent = projects.dumbassDonkeys.floorPrice;
+  floorPrice.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice;
 
   const mintPriceSOL = document.querySelector("#mint-price-sol");
-  mintPriceSOL.textContent = `${projects.dumbassDonkeys.mintPriceSOL} $SOL`;
+  mintPriceSOL.textContent = `${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceSOL} $SOL`;
 
   const mintDate = document.querySelector("#mint-date");
-  mintDate.textContent = projects.dumbassDonkeys.mintDate;
+  mintDate.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintDate;
+
+  const image = document.querySelector("#pfp");
+  image.src = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].picture;
 }
+
+// //
+// function randomProject(project) {
+//   displayDOM(project);
+// }
+
+// //
 
 const button = document.querySelector("button");
 
@@ -1172,17 +1246,17 @@ function showDonationButton() {
 }
 
 function randomButtonText() {
-  let randomIndex = Math.floor(Math.random() * buttonTexts.length);
+  let randomIndex = Math.floor(Math.random() * _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts.length);
   console.log(`Random button-text-index is: ${randomIndex}`);
-  button.innerText = buttonTexts[randomIndex];
+  button.innerText = _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts[randomIndex];
 }
 
 function eventListenerButtontext() {
   button.addEventListener("click", randomButtonText);
 }
 
-calcUSDC();
-displayDOM();
+calcUSDC("lily");
+displayDOM("lily");
 showDonationButton();
 eventListenerButtontext();
 
