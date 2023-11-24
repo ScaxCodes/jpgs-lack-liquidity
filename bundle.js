@@ -409,7 +409,7 @@ body {
 }
 
 .if-you {
-  width: 240px;
+  width: 260px;
   margin: 120px 0 0 0;
 }
 
@@ -426,7 +426,7 @@ body {
 }
 
 .you-would-have {
-  width: 240px;
+  width: 260px;
 }
 
 #dollar {
@@ -491,7 +491,7 @@ button {
   font-size: 1.15rem;
   text-align: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\n.if-you {\n  width: 240px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 240px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\n.if-you {\n  width: 260px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 260px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1063,8 +1063,78 @@ const projects = {
     mintPriceSOL: 35,
     mintPriceUSDC: 9.76 * 35,
     mintDate: "2022-12-29",
-    picture: "taiyopilots.webp",
+    picture: "./taiyopilots.webp",
     urlME: "//magiceden.io/marketplace/taiyopilots",
+  },
+  ovols: {
+    api: "elixir_ovols",
+    name: "Ovol",
+    floorPrice: 1.861,
+    mintPriceSOL: 10,
+    mintPriceUSDC: 14.29 * 10,
+    mintDate: "2022-11-17",
+    picture: "./ovols.webp",
+    urlME: "//magiceden.io/marketplace/elixir_ovols",
+  },
+  primates: {
+    api: "primates",
+    name: "Primate",
+    floorPrice: 1.776,
+    mintPriceSOL: 4,
+    mintPriceUSDC: 28.18 * 4,
+    mintDate: "2022-06-14",
+    picture: "./primates.webp",
+    urlME: "//magiceden.io/marketplace/primates",
+  },
+  popheadz: {
+    api: "popheadz",
+    name: "POPHEAD",
+    floorPrice: 0.202,
+    mintPriceSOL: 3,
+    mintPriceUSDC: 17.66 * 3,
+    mintDate: "2022-11-11",
+    picture: "./popheadz.webp",
+    urlME: "//magiceden.io/marketplace/popheadz",
+  },
+  trippinApeTribe: {
+    api: "trippin_ape_tribe",
+    name: "Trippin' Ape",
+    floorPrice: 0.752,
+    mintPriceSOL: 3.5,
+    mintPriceUSDC: 49.06 * 3.5,
+    mintDate: "2022-05-24",
+    picture: "./trippin_ape_tribe.webp",
+    urlME: "//magiceden.io/marketplace/trippin_ape_tribe",
+  },
+  theBastards: {
+    api: "the_bastards",
+    name: "Bastard",
+    floorPrice: 0.584,
+    mintPriceSOL: 2.88,
+    mintPriceUSDC: 20.95 * 2.88,
+    mintDate: "2023-05-15",
+    picture: "./the_bastards.png",
+    urlME: "//magiceden.io/marketplace/the_bastards",
+  },
+  mindfolks: {
+    api: "mindfolk",
+    name: "Mindfolk",
+    floorPrice: 0.174,
+    mintPriceSOL: 1,
+    mintPriceUSDC: 170.31 * 1,
+    mintDate: "2022-01-01",
+    picture: "mindfolk.webp",
+    urlME: "//magiceden.io/marketplace/mindfolk",
+  },
+  peskyPenguins: {
+    api: "pesky_penguins",
+    name: "Pesky Penguin",
+    floorPrice: 0.966,
+    mintPriceSOL: 0.25,
+    mintPriceUSDC: 154.26 * 0.25,
+    mintDate: "2021-10-08",
+    picture: "pesky_penguins.webp",
+    urlME: "//magiceden.io/marketplace/pesky_penguins",
   },
 };
 
