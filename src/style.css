@@ -129,12 +129,12 @@ a:visited {
 
 button {
   height: 8vh;
-  width: 260px;
+  width: 280px;
   background-color: blue;
   color: white;
   border: 0;
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -143,4 +143,9 @@ button {
   display: none;
   font-size: 1.15rem;
   text-align: center;
+}
+
+.donation-header {
+  color: #9945ff;
+  text-decoration: underline;
 }
