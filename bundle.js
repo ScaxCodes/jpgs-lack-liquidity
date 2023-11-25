@@ -527,12 +527,12 @@ a:visited {
 
 button {
   height: 8vh;
-  width: 260px;
+  width: 280px;
   background-color: blue;
   color: white;
   border: 0;
   font-size: 1.15rem;
-  font-weight: 700;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -542,7 +542,12 @@ button {
   font-size: 1.15rem;
   text-align: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,sBAAsB;EACtB,kEAAkE;EAClE;4DAC0D;AAC5D;;AAEA;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,uBAAuB;EACvB,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,QAAQ;AACV;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\n* {\n  box-sizing: border-box;\n  /* https://css-tricks.com/snippets/css/system-font-stack/ below: */\n  font-family: system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\na {\n  text-decoration: none;\n}\n\na:visited {\n  color: white;\n}\n\n.header-wrapper {\n  background-color: black;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  background-color: black;\n  width: 1000px;\n  height: 50px;\n  color: white;\n  font-size: 1.2rem;\n}\n\n.degods {\n  fill: white;\n  padding: 0 13.85px;\n  display: block;\n}\n\n.frank {\n  display: flex;\n  align-items: center;\n  padding: 0 13.85px;\n  gap: 7px;\n}\n\n#frank-pfp {\n  height: 36px;\n  border-radius: 100%;\n  display: block;\n}\n\n.if-you {\n  width: 280px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 280px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 2.75rem;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
+
+.donation-header {
+  color: #9945ff;
+  text-decoration: underline;
+}
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,sBAAsB;EACtB,kEAAkE;EAClE;4DAC0D;AAC5D;;AAEA;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,aAAa;EACb,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,uBAAuB;EACvB,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,kBAAkB;EAClB,QAAQ;AACV;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,kBAAkB;AACpB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB;;AAEA;EACE,cAAc;EACd,0BAA0B;AAC5B","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\n* {\n  box-sizing: border-box;\n  /* https://css-tricks.com/snippets/css/system-font-stack/ below: */\n  font-family: system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\na {\n  text-decoration: none;\n}\n\na:visited {\n  color: white;\n}\n\n.header-wrapper {\n  background-color: black;\n  width: 100vw;\n  display: flex;\n  justify-content: center;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  background-color: black;\n  width: 1000px;\n  height: 50px;\n  color: white;\n  font-size: 1.2rem;\n}\n\n.degods {\n  fill: white;\n  padding: 0 13.85px;\n  display: block;\n}\n\n.frank {\n  display: flex;\n  align-items: center;\n  padding: 0 13.85px;\n  gap: 7px;\n}\n\n#frank-pfp {\n  height: 36px;\n  border-radius: 100%;\n  display: block;\n}\n\n.if-you {\n  width: 280px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 280px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 2.75rem;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 280px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: bold;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n\n.donation-header {\n  color: #9945ff;\n  text-decoration: underline;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1076,6 +1081,136 @@ const buttonTexts = [
 
 /***/ }),
 
+/***/ "./src/eventlisteners.js":
+/*!*******************************!*\
+  !*** ./src/eventlisteners.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   countDonationButton: () => (/* binding */ countDonationButton)
+/* harmony export */ });
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./src/index.js");
+/* harmony import */ var _buttontexts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttontexts */ "./src/buttontexts.js");
+
+
+
+const button = document.querySelector("button");
+
+function countDonationButton() {
+  let counter = 0;
+  button.addEventListener("click", () => {
+    if (counter === 4) {
+      console.log("Rendering donation link, stopping button counter...");
+      const donationDiv = document.querySelector(".donation-link");
+      donationDiv.style.display = "block";
+      return;
+    }
+    if (counter > 4) return;
+    counter++;
+    console.log(`Button clicked ${counter} time(s)`);
+  });
+}
+
+function displayRandomButtonText() {
+  let randomIndex = Math.floor(Math.random() * _buttontexts__WEBPACK_IMPORTED_MODULE_1__.buttonTexts.length);
+  console.log(`Random button-text-index is: ${randomIndex}`);
+  button.innerText = _buttontexts__WEBPACK_IMPORTED_MODULE_1__.buttonTexts[randomIndex];
+}
+
+button.addEventListener("click", displayRandomButtonText);
+button.addEventListener("click", _index__WEBPACK_IMPORTED_MODULE_0__.displayRandomProject);
+
+
+
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   displayRandomProject: () => (/* binding */ displayRandomProject)
+/* harmony export */ });
+/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _nftprojects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nftprojects */ "./src/nftprojects.js");
+/* harmony import */ var _eventlisteners__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./eventlisteners */ "./src/eventlisteners.js");
+
+
+
+
+
+
+let SOLrate = 0;
+
+async function fetchSOLRate() {
+  try {
+    if (SOLrate !== 0) return;
+    // https://docs.coincap.io/
+    const response = await fetch(`https://api.coincap.io/v2/assets/solana`);
+    const responseJson = await response.json();
+    SOLrate = responseJson.data.priceUsd;
+    console.log(`Current $SOL rate: ${responseJson.data.priceUsd}$`);
+    return responseJson.data.priceUsd;
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
+}
+
+async function calcUSDC(project) {
+  try {
+    await fetchSOLRate();
+
+    const USDCPrice = document.querySelector(".price-in-usdc div");
+    USDCPrice.textContent = (_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice * SOLrate).toFixed(2);
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
+}
+
+function displayDOM(project) {
+  const projectName = document.querySelector("#project-name");
+  projectName.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].name;
+
+  const mintPriceUSDC = document.querySelector("#dollar");
+  mintPriceUSDC.textContent = `$${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceUSDC.toFixed(2)}`;
+
+  const floorPrice = document.querySelector(".price-in-sol div");
+  floorPrice.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice;
+
+  const mintPriceSOL = document.querySelector("#mint-price-sol");
+  mintPriceSOL.textContent = `${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceSOL} $SOL`;
+
+  const mintDate = document.querySelector("#mint-date");
+  mintDate.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintDate;
+
+  const image = document.querySelector("#pfp");
+  image.src = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].picture;
+}
+
+const projectsList = Object.keys(_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects);
+
+function displayRandomProject() {
+  let randomIndex = Math.floor(Math.random() * projectsList.length);
+  console.log(`Random project-index is: ${randomIndex}`);
+  calcUSDC(projectsList[randomIndex]);
+  displayDOM(projectsList[randomIndex]);
+}
+
+displayRandomProject();
+(0,_eventlisteners__WEBPACK_IMPORTED_MODULE_3__.countDonationButton)();
+
+
+
+
+/***/ }),
+
 /***/ "./src/nftprojects.js":
 /*!****************************!*\
   !*** ./src/nftprojects.js ***!
@@ -1279,114 +1414,12 @@ const projects = {
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./normalize.css */ "./src/normalize.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _nftprojects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nftprojects */ "./src/nftprojects.js");
-/* harmony import */ var _buttontexts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttontexts */ "./src/buttontexts.js");
-
-
-
-
-
-
-let SOLrate = 0;
-
-async function fetchSOLRate() {
-  try {
-    if (SOLrate !== 0) return;
-    // https://docs.coincap.io/
-    const response = await fetch(`https://api.coincap.io/v2/assets/solana`);
-    const responseJson = await response.json();
-    SOLrate = responseJson.data.priceUsd;
-    console.log(`Current $SOL rate: ${responseJson.data.priceUsd}$`);
-    return responseJson.data.priceUsd;
-  } catch (error) {
-    console.error(`Error: ${error.message}`);
-  }
-}
-
-async function calcUSDC(project) {
-  try {
-    await fetchSOLRate();
-
-    const USDCPrice = document.querySelector(".price-in-usdc div");
-    USDCPrice.textContent = (_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice * SOLrate).toFixed(2);
-  } catch (error) {
-    console.error(`Error: ${error.message}`);
-  }
-}
-
-function displayDOM(project) {
-  const projectName = document.querySelector("#project-name");
-  projectName.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].name;
-
-  const mintPriceUSDC = document.querySelector("#dollar");
-  mintPriceUSDC.textContent = `$${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceUSDC.toFixed(2)}`;
-
-  const floorPrice = document.querySelector(".price-in-sol div");
-  floorPrice.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].floorPrice;
-
-  const mintPriceSOL = document.querySelector("#mint-price-sol");
-  mintPriceSOL.textContent = `${_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintPriceSOL} $SOL`;
-
-  const mintDate = document.querySelector("#mint-date");
-  mintDate.textContent = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].mintDate;
-
-  const image = document.querySelector("#pfp");
-  image.src = _nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects[project].picture;
-}
-
-const projectsList = Object.keys(_nftprojects__WEBPACK_IMPORTED_MODULE_2__.projects);
-
-function displayRandomProject() {
-  let randomIndex = Math.floor(Math.random() * projectsList.length);
-  console.log(`Random project-index is: ${randomIndex}`);
-  calcUSDC(projectsList[randomIndex]);
-  displayDOM(projectsList[randomIndex]);
-}
-
-const button = document.querySelector("button");
-
-function showDonationButton() {
-  let counter = 0;
-  button.addEventListener("click", () => {
-    if (counter === 4) {
-      console.log("Rendering donation link, stopping button counter...");
-      const donationDiv = document.querySelector(".donation-link");
-      donationDiv.style.display = "block";
-      return;
-    }
-    if (counter > 4) return;
-    counter++;
-    console.log(`Button clicked ${counter} time(s)`);
-  });
-}
-
-function displayRandomButtonText() {
-  let randomIndex = Math.floor(Math.random() * _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts.length);
-  console.log(`Random button-text-index is: ${randomIndex}`);
-  button.innerText = _buttontexts__WEBPACK_IMPORTED_MODULE_3__.buttonTexts[randomIndex];
-}
-
-function eventListenerButtontext() {
-  button.addEventListener("click", displayRandomButtonText);
-  button.addEventListener("click", displayRandomProject);
-}
-
-calcUSDC("taiyoPilots");
-displayDOM("taiyoPilots");
-showDonationButton();
-eventListenerButtontext();
-
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=bundle.js.map
