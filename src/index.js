@@ -88,7 +88,7 @@ function eventListenerButtontext() {
   button.addEventListener("click", displayRandomProject);
 }
 
-calcUSDC("lily");
-displayDOM("lily");
+calcUSDC("taiyoPilots");
+displayDOM("taiyoPilots");
 showDonationButton();
 eventListenerButtontext();
