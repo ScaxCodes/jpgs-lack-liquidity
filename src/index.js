@@ -2,7 +2,7 @@ import "./normalize.css";
 import "./style.css";
 
 import { projects } from "./nftprojects";
-import { countDonationButton } from "./eventlisteners";
+import "./eventlisteners";
 
 let SOLrate = 0;
 
@@ -61,6 +61,5 @@ function displayRandomProject() {
 }
 
 displayRandomProject();
-countDonationButton();
 
 export { displayRandomProject };
