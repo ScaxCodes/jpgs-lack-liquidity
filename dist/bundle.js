@@ -400,6 +400,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* INSERT VARIABLE
 USDC COLOR = #2775ca
 SOL COLOR = #9945FF */
 
+* {
+  box-sizing: border-box;
+  /* https://css-tricks.com/snippets/css/system-font-stack/ below: */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 body {
   display: flex;
   gap: 20px;
@@ -430,6 +437,7 @@ a:visited {
 .degods {
   fill: white;
   padding: 0 13.85px;
+  display: block;
 }
 
 .frank {
@@ -439,9 +447,10 @@ a:visited {
   gap: 7px;
 }
 
-.frank img {
+#frank-pfp {
   height: 36px;
   border-radius: 100%;
+  display: block;
 }
 
 .if-you {
@@ -527,7 +536,7 @@ button {
   font-size: 1.15rem;
   text-align: center;
 }
-`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,uBAAuB;EACvB,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,cAAc;EACd,QAAQ;AACV;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\na {\n  text-decoration: none;\n}\n\na:visited {\n  color: white;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  background-color: black;\n  width: 100vw;\n  height: 50px;\n  color: white;\n  font-size: 1.2rem;\n}\n\n.degods {\n  fill: white;\n  padding: 0 13.85px;\n}\n\n.frank {\n  display: flex;\n  align-items: center;\n  padding: 0 7px;\n  gap: 7px;\n}\n\n.frank img {\n  height: 36px;\n  border-radius: 100%;\n}\n\n.if-you {\n  width: 260px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 260px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;qBAEqB;;AAErB;EACE,sBAAsB;EACtB,kEAAkE;EAClE;4DAC0D;AAC5D;;AAEA;EACE,aAAa;EACb,SAAS;EACT,sBAAsB;EACtB,mBAAmB;EACnB,eAAe;AACjB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;EAC9B,uBAAuB;EACvB,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,cAAc;EACd,QAAQ;AACV;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,mBAAmB;AACrB;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,0BAA0B;EAC1B,8BAA8B;EAC9B,8BAA8B;AAChC;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,0BAA0B;EAC1B,4BAA4B;EAC5B,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,SAAS;EACT,mBAAmB;AACrB;;AAEA;;EAEE,eAAe;EACf,iBAAiB;AACnB;;AAEA;EACE,cAAc;AAChB;;AAEA;;EAEE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,aAAa;AACf;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,sBAAsB;EACtB,YAAY;EACZ,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,aAAa;EACb,kBAAkB;EAClB,kBAAkB;AACpB","sourcesContent":["/* INSERT VARIABLE\nUSDC COLOR = #2775ca\nSOL COLOR = #9945FF */\n\n* {\n  box-sizing: border-box;\n  /* https://css-tricks.com/snippets/css/system-font-stack/ below: */\n  font-family: system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif,\n    \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\";\n}\n\nbody {\n  display: flex;\n  gap: 20px;\n  flex-direction: column;\n  align-items: center;\n  font-size: 2rem;\n}\n\na {\n  text-decoration: none;\n}\n\na:visited {\n  color: white;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  background-color: black;\n  width: 100vw;\n  height: 50px;\n  color: white;\n  font-size: 1.2rem;\n}\n\n.degods {\n  fill: white;\n  padding: 0 13.85px;\n  display: block;\n}\n\n.frank {\n  display: flex;\n  align-items: center;\n  padding: 0 7px;\n  gap: 7px;\n}\n\n#frank-pfp {\n  height: 36px;\n  border-radius: 100%;\n  display: block;\n}\n\n.if-you {\n  width: 260px;\n  margin: 120px 0 0 0;\n}\n\n#usdc {\n  text-decoration: underline;\n  text-decoration-color: #2775ca;\n  text-underline-position: under;\n}\n\n#project-name {\n  text-decoration: underline;\n  text-decoration-color: #9945ff;\n  text-underline-position: under;\n}\n\n.you-would-have {\n  width: 260px;\n}\n\n#dollar {\n  text-decoration: underline;\n  text-decoration-color: green;\n  text-underline-position: under;\n}\n\n.equation-container {\n  display: flex;\n  gap: 20px;\n  align-items: center;\n}\n\n.equal-sign,\n.slash-sign {\n  font-size: 3rem;\n  font-weight: bold;\n}\n\n.equal-sign {\n  margin: 0 30px;\n}\n\n.price-in-sol,\n.price-in-usdc {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  font-size: 1.5rem;\n  font-weight: bold;\n  color: #9945ff;\n}\n\n.price-in-usdc {\n  color: green;\n}\n\n.facts-container p {\n  font-size: 1.15rem;\n  margin: 5px 0;\n}\n\n.solana-project img {\n  width: 150px;\n}\n\nbutton {\n  height: 8vh;\n  width: 260px;\n  background-color: blue;\n  color: white;\n  border: 0;\n  font-size: 1.15rem;\n  font-weight: 700;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\n.donation-link {\n  display: none;\n  font-size: 1.15rem;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
