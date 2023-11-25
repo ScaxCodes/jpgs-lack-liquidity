@@ -1088,30 +1088,10 @@ const buttonTexts = [
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   countDonationButton: () => (/* binding */ countDonationButton)
-/* harmony export */ });
 /* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ "./src/index.js");
 /* harmony import */ var _buttontexts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./buttontexts */ "./src/buttontexts.js");
 
 
-
-const button = document.querySelector("button");
-
-function countDonationButton() {
-  let counter = 0;
-  button.addEventListener("click", () => {
-    if (counter === 4) {
-      console.log("Rendering donation link, stopping button counter...");
-      const donationDiv = document.querySelector(".donation-link");
-      donationDiv.style.display = "block";
-      return;
-    }
-    if (counter > 4) return;
-    counter++;
-    console.log(`Button clicked ${counter} time(s)`);
-  });
-}
 
 function displayRandomButtonText() {
   let randomIndex = Math.floor(Math.random() * _buttontexts__WEBPACK_IMPORTED_MODULE_1__.buttonTexts.length);
@@ -1119,10 +1099,24 @@ function displayRandomButtonText() {
   button.innerText = _buttontexts__WEBPACK_IMPORTED_MODULE_1__.buttonTexts[randomIndex];
 }
 
+const button = document.querySelector("button");
+
+let counter = 0;
+
+button.addEventListener("click", () => {
+  if (counter === 4) {
+    console.log("Rendering donation link, stopping button counter...");
+    const donationDiv = document.querySelector(".donation-link");
+    donationDiv.style.display = "block";
+    return;
+  }
+  if (counter > 4) return;
+  counter++;
+  console.log(`Button clicked ${counter} time(s)`);
+});
+
 button.addEventListener("click", displayRandomButtonText);
 button.addEventListener("click", _index__WEBPACK_IMPORTED_MODULE_0__.displayRandomProject);
-
-
 
 
 /***/ }),
@@ -1204,7 +1198,6 @@ function displayRandomProject() {
 }
 
 displayRandomProject();
-(0,_eventlisteners__WEBPACK_IMPORTED_MODULE_3__.countDonationButton)();
 
 
 
