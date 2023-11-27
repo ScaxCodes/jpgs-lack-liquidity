@@ -1,8 +1,8 @@
 # JPEGs Or Stablecoins?
 
-#### Video Demo: [URL HERE](INSERT_YOUR_VIDEO_URL_HERE)
+### GH Repository: [https://github.com/ScaxCodes/jpgs-lack-liquidity](https://github.com/ScaxCodes/jpgs-lack-liquidity)
 
-![Alt text](image.png)
+![Screenshot of the project in a web-browser](image.png)
 
 #### Description:
 This project, titled "JPEGs Or Stablecoins?", is a web application that emulates the functionality of one of my favorite websites, bitcoinorshit.com by frankdegods. It provides a unique comparison between the current value of various Solana NFT projects in comparison to their mint price in USD.
@@ -23,6 +23,7 @@ To utilize this application, simply open the `index.html` file in a web browser.
 This project has been developed solely using frontend technologies, showcasing my proficiency in HTML, CSS, and JavaScript. As a learning exercise, it highlights the capabilities of frontend development in creating interactive and informative web applications. In the future, I plan to expand my skills to include backend development and incorporate more complex features.
 
 ## Planned Features for the Future:
+- **Get the live Floor Price:** Right now, calculations are based on a fixed floor price stored in the JavaScript object.
 - **Retrieve NFT Project Data via API:** Implement a backend server to fetch NFT project data from external APIs, allowing for more extensive project information.
 - **Store Projects in a Database/Backend:** Transition from a frontend object to a backend or database to manage and retrieve project data efficiently.
 - **Add All-Time High (ATH) in USDC for Each NFT:** Display the highest value attained by each NFT project in USDC for better investment insights.
